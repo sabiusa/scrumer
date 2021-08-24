@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DailyScrum: Identifiable {
+    
     let id: UUID
     let title: String
     let attendees: [String]
@@ -30,6 +31,7 @@ struct DailyScrum: Identifiable {
 }
 
 extension DailyScrum {
+    
     static let data = [
         DailyScrum(
             title: "Design",
@@ -50,4 +52,23 @@ extension DailyScrum {
             color: Color("Web Dev")
         )
     ]
+}
+
+extension DailyScrum {
+    
+    struct Data {
+        var title: String = ""
+        var attendees: [String] = []
+        var lengthInMinutes: Double = 5.0
+        var color: Color = .random
+    }
+
+    var data: Data {
+        return Data(
+            title: title,
+            attendees: attendees,
+            lengthInMinutes: Double(lengthInMinutes),
+            color: color
+        )
+    }
 }
