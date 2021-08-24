@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct ScrumerApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            MeetingView()
+            ScrumsView(scrums: DailyScrum.data)
         }
     }
 }
