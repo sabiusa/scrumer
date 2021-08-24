@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7795218826D4C8DC0013E998 /* scrumerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7795218726D4C8DC0013E998 /* scrumerApp.swift */; };
-		7795218A26D4C8DC0013E998 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7795218926D4C8DC0013E998 /* ContentView.swift */; };
+		7795218826D4C8DC0013E998 /* ScrumerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7795218726D4C8DC0013E998 /* ScrumerApp.swift */; };
+		7795218A26D4C8DC0013E998 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7795218926D4C8DC0013E998 /* MeetingView.swift */; };
 		7795218C26D4C8DE0013E998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7795218B26D4C8DE0013E998 /* Assets.xcassets */; };
 		7795218F26D4C8DE0013E998 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7795218E26D4C8DE0013E998 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7795218426D4C8DC0013E998 /* scrumer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrumer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7795218726D4C8DC0013E998 /* scrumerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrumerApp.swift; sourceTree = "<group>"; };
-		7795218926D4C8DC0013E998 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7795218726D4C8DC0013E998 /* ScrumerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumerApp.swift; sourceTree = "<group>"; };
+		7795218926D4C8DC0013E998 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		7795218B26D4C8DE0013E998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7795218E26D4C8DE0013E998 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7795219026D4C8DE0013E998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,8 +52,8 @@
 		7795218626D4C8DC0013E998 /* scrumer */ = {
 			isa = PBXGroup;
 			children = (
-				7795218726D4C8DC0013E998 /* scrumerApp.swift */,
-				7795218926D4C8DC0013E998 /* ContentView.swift */,
+				7795218726D4C8DC0013E998 /* ScrumerApp.swift */,
+				7795218926D4C8DC0013E998 /* MeetingView.swift */,
 				7795218B26D4C8DE0013E998 /* Assets.xcassets */,
 				7795219026D4C8DE0013E998 /* Info.plist */,
 				7795218D26D4C8DE0013E998 /* Preview Content */,
@@ -138,8 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7795218A26D4C8DC0013E998 /* ContentView.swift in Sources */,
-				7795218826D4C8DC0013E998 /* scrumerApp.swift in Sources */,
+				7795218A26D4C8DC0013E998 /* MeetingView.swift in Sources */,
+				7795218826D4C8DC0013E998 /* ScrumerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +272,7 @@
 				DEVELOPMENT_TEAM = 2GY7TL5G8Y;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = scrumer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +294,7 @@
 				DEVELOPMENT_TEAM = 2GY7TL5G8Y;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = scrumer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

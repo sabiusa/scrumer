@@ -1,5 +1,5 @@
 //
-//  scrumerApp.swift
+//  ScrumerApp.swift
 //  scrumer
 //
 //  Created by Saba Khutsishvili on 24.08.21.
@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct scrumerApp: App {
+struct ScrumerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MeetingView()
         }
     }
 }
