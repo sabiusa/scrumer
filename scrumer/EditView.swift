@@ -24,13 +24,16 @@ struct EditView: View {
                         step: 1.0,
                         label: { Text("Length") }
                     )
+                    .accessibilityValue("\(Int(data.lengthInMinutes)) minutes")
                     
                     Spacer()
                     
                     Text("\(Int(data.lengthInMinutes)) minutes")
+                        .accessibilityHidden(true)
                 }
                 
                 ColorPicker("Color", selection: $data.color)
+                    .accessibilityLabel(Text("Color picker"))
             }
             
             Section(header: Text("Attendees")) {
@@ -52,6 +55,7 @@ struct EditView: View {
                         },
                         label: {
                             Image(systemName: "plus.circle.fill")
+                                .accessibilityLabel(Text("Add attendee"))
                         }
                     )
                     .disabled(newAttendee.isEmpty)
