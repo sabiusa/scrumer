@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3EDB601826D4F6950011BAF5 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDB601726D4F6950011BAF5 /* DailyScrum.swift */; };
+		3EDB601A26D4F7B80011BAF5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDB601926D4F7B80011BAF5 /* CardView.swift */; };
 		7795218826D4C8DC0013E998 /* ScrumerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7795218726D4C8DC0013E998 /* ScrumerApp.swift */; };
 		7795218A26D4C8DC0013E998 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7795218926D4C8DC0013E998 /* MeetingView.swift */; };
 		7795218C26D4C8DE0013E998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7795218B26D4C8DE0013E998 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		3EDB601726D4F6950011BAF5 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		3EDB601926D4F7B80011BAF5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		7795218426D4C8DC0013E998 /* scrumer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrumer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7795218726D4C8DC0013E998 /* ScrumerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumerApp.swift; sourceTree = "<group>"; };
 		7795218926D4C8DC0013E998 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				7795218726D4C8DC0013E998 /* ScrumerApp.swift */,
 				7795218926D4C8DC0013E998 /* MeetingView.swift */,
+				3EDB601926D4F7B80011BAF5 /* CardView.swift */,
 				3EDB601626D4F6740011BAF5 /* Models */,
 				7795218B26D4C8DE0013E998 /* Assets.xcassets */,
 				7795219026D4C8DE0013E998 /* Info.plist */,
@@ -151,6 +154,7 @@
 			files = (
 				7795218A26D4C8DC0013E998 /* MeetingView.swift in Sources */,
 				3EDB601826D4F6950011BAF5 /* DailyScrum.swift in Sources */,
+				3EDB601A26D4F7B80011BAF5 /* CardView.swift in Sources */,
 				7795218826D4C8DC0013E998 /* ScrumerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
