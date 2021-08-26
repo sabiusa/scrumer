@@ -20,6 +20,7 @@ struct ScrumsView: View {
                 .listRowBackground(scrum.color)
             }
         }
+        .listStyle(InsetGroupedListStyle())
         .navigationTitle("Daily Scrums")
         .navigationBarItems(trailing: Button(action: {}) {
             Image(systemName: "plus")

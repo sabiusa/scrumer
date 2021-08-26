@@ -17,6 +17,7 @@ struct ScrumerApp: App {
             NavigationView {
                 ScrumsView(scrums: $scrums)
             }
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }
