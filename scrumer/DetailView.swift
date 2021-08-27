@@ -54,7 +54,7 @@ struct DetailView: View {
             isPresented = true
         })
         .navigationTitle(scrum.title)
-        .sheet(isPresented: $isPresented) {
+        .fullScreenCover(isPresented: $isPresented) {
             NavigationView {
                 EditView(data: $data)
                     .navigationTitle(scrum.title)

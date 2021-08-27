@@ -62,6 +62,15 @@ extension DailyScrum {
         var lengthInMinutes: Double = 5.0
         var color: Color = .random
     }
+    
+    init(data: Data) {
+        self.init(
+            title: data.title,
+            attendees: data.attendees,
+            lengthInMinutes: Int(data.lengthInMinutes),
+            color: data.color
+        )
+    }
 
     var data: Data {
         return Data(
