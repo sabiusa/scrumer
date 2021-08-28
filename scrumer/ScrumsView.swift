@@ -12,8 +12,6 @@ struct ScrumsView: View {
     @State private var isPresented = false
     @State private var newScrumData = DailyScrum.Data()
     
-    @Environment(\.scenePhase) private var scenePhase
-    
     @Binding var scrums: [DailyScrum]
     
     let saveAction: () -> Void
@@ -49,11 +47,6 @@ struct ScrumsView: View {
                             isPresented = false
                         }
                     )
-            }
-        }
-        .onChange(of: scenePhase) { phase in
-            if phase == .inactive {
-                saveAction()
             }
         }
     }

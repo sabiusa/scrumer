@@ -12,6 +12,8 @@ struct ScrumerApp: App {
     
     @ObservedObject private var data = ScrumData()
     
+    @Environment(\.scenePhase) private var scenePhase
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
@@ -25,6 +27,11 @@ struct ScrumerApp: App {
             .navigationViewStyle(StackNavigationViewStyle())
             .onAppear {
                 data.load()
+            }
+            .onChange(of: scenePhase) { phase in
+                if phase == .inactive {
+                    data.save()
+                }
             }
         }
     }
