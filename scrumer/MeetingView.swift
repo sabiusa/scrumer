@@ -13,6 +13,10 @@ struct MeetingView: View {
     @Binding var scrum: DailyScrum
     @StateObject var scrumTimer = ScrumTimer()
     
+    @State private var transcript = ""
+    @State private var isRecording = false
+    private let speechRecognizer = SpeechRecognizer()
+    
     var player = AVPlayer.sharedDingPlayer
     
     var body: some View {
@@ -29,6 +33,7 @@ struct MeetingView: View {
                 
                 MeetingTimerView(
                     speakers: scrumTimer.speakers,
+                    isRecording: isRecording,
                     scrumColor: scrum.color
                 )
                 
@@ -51,15 +56,27 @@ struct MeetingView: View {
                 player.play()
             }
             scrumTimer.startScrum()
+            startAudioRecording()
         }
         .onDisappear {
             scrumTimer.stopScrum()
+            stopAudioRecording()
             let newHistory = History(
                 attendees: scrum.attendees,
                 lengthInMinutes: scrumTimer.secondsElapsed / 60
             )
             scrum.history.insert(newHistory, at: 0)
         }
+    }
+    
+    private func startAudioRecording() {
+        speechRecognizer.record(to: $transcript)
+        isRecording = true
+    }
+    
+    private func stopAudioRecording() {
+        speechRecognizer.stopRecording()
+        isRecording = false
     }
 }
 

@@ -10,6 +10,7 @@ import SwiftUI
 struct MeetingTimerView: View {
     
     let speakers: [ScrumTimer.Speaker]
+    let isRecording: Bool
     var scrumColor: Color
     
     private var currentSpeaker: String {
@@ -26,6 +27,11 @@ struct MeetingTimerView: View {
                     .font(.title)
                 
                 Text("is speaking")
+                
+                Image(systemName: isRecording ? "mic" : "mic.slash")
+                    .font(.title)
+                    .padding(.top)
+                    .accessibilityLabel(isRecording ? "with transcription" : "without transcription")
             }
             .accessibilityElement(children: .combine)
             .foregroundColor(scrumColor.accessibleFontColor)
@@ -52,6 +58,7 @@ struct MeetingTimerView_Previews: PreviewProvider {
                 ScrumTimer.Speaker(name: "Kim", isCompleted: true),
                 ScrumTimer.Speaker(name: "Bill", isCompleted: false)
             ],
+            isRecording: true,
             scrumColor: Color("Design")
         )
     }
