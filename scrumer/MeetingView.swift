@@ -63,7 +63,8 @@ struct MeetingView: View {
             stopAudioRecording()
             let newHistory = History(
                 attendees: scrum.attendees,
-                lengthInMinutes: scrumTimer.secondsElapsed / 60
+                lengthInMinutes: scrumTimer.secondsElapsed / 60,
+                transcript: transcript
             )
             scrum.history.insert(newHistory, at: 0)
         }
